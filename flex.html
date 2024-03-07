@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        #wrapper {
+            width: 1000px;
+            height: 1000px;
+            margin: 20px auto;
+            background-color: green;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: bottom;
+          
+        }
+        #wrapper .item {
+            width: 300px;
+            height: 100px;
+            background-color: red;
+            font-size: 35px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        #wrapper .item h1 {
+            font-size: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="item">
+            <h1>1</h1></div>
+        <div class="item">
+            <h1>2</h1>
+        </div>
+       
+
+    </div>
+</body>
+</html>
